@@ -1,0 +1,409 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Happy Birthday Annu ♡</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#fff0f6">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap">
+<style>
+/* layout: single card centered, floating petals ambient, candle-warm palette */
+:root {
+  --bg: #fff8fb;
+  --surface: rgba(255,255,255,.93);
+  --border: rgba(230,190,215,.65);
+  --ink: #5a4259;
+  --muted: #957f96;
+  --pink: #d4789b;
+  --rose: #c2607f;
+  --amber: #e8a85a;
+  --cream: #fff4e8;
+  --shadow: #be8aaf22;
+
+  --ff-display: 'Playfair Display', Georgia, serif;
+  --ff-body: 'Quicksand', system-ui, sans-serif;
+
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1e1220;
+    --surface: rgba(42,24,46,.95);
+    --border: rgba(180,120,160,.3);
+    --ink: #f0ddef;
+    --muted: #b89ab8;
+    --pink: #e08cb5;
+    --rose: #d4799a;
+    --amber: #f0b870;
+    --cream: #2a1e10;
+    --shadow: #00000045;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1e1220;
+  --surface: rgba(42,24,46,.95);
+  --border: rgba(180,120,160,.3);
+  --ink: #f0ddef;
+  --muted: #b89ab8;
+  --pink: #e08cb5;
+  --rose: #d4799a;
+  --amber: #f0b870;
+  --cream: #2a1e10;
+  --shadow: #00000045;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--ff-body);
+  color: var(--ink);
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse 70% 60% at 20% 10%, color-mix(in srgb, var(--pink) 12%, transparent), transparent),
+    radial-gradient(ellipse 60% 50% at 80% 85%, color-mix(in srgb, var(--amber) 10%, transparent), transparent);
+  overflow-x: hidden;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 44px;
+}
+
+/* subtle dot texture */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .14;
+  background-image: radial-gradient(var(--pink) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ── CARD ─────────────────────────────────────── */
+main {
+  min-height: calc(100vh - 88px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: min(100%, 460px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 36px 28px 30px;
+  text-align: center;
+  box-shadow: 0 20px 60px var(--shadow);
+  position: relative;
+  animation: arrive .85s cubic-bezier(.22,1,.36,1) both;
+  backdrop-filter: blur(2px);
+}
+
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(28px) scale(.97) }
+  to   { opacity: 1; transform: none }
+}
+
+/* corner butterflies */
+.corner { position: absolute; font-size: 22px; top: -12px }
+.corner.l { left: -8px }
+.corner.r { right: -8px }
+
+/* ── AVATAR ───────────────────────────────────── */
+.avatar {
+  width: 96px; height: 96px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  background: linear-gradient(145deg, var(--cream), color-mix(in srgb, var(--pink) 18%, var(--bg)));
+  border: 5px solid var(--bg);
+  box-shadow: 0 6px 22px var(--shadow);
+  font-size: 50px;
+}
+
+/* ── EYEBROW ──────────────────────────────────── */
+.eyebrow {
+  font: 600 9px/1 var(--ff-body);
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin: 0 0 11px;
+}
+
+/* ── HEADING ──────────────────────────────────── */
+h1 {
+  font: 400 clamp(30px,8vw,40px)/1.08 var(--ff-display);
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+h1 em {
+  display: block;
+  font-style: italic;
+  color: var(--rose);
+  font-size: 1.1em;
+}
+
+.name-line {
+  font: 600 20px var(--ff-body);
+  color: var(--pink);
+  margin: 6px 0 20px;
+  letter-spacing: .5px;
+}
+
+.divider {
+  display: flex; align-items: center; gap: 10px;
+  margin: 0 0 20px;
+  color: var(--border);
+  font-size: 17px;
+}
+.divider::before, .divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ── MESSAGE ──────────────────────────────────── */
+.message {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--muted);
+  max-width: 340px;
+  margin: 0 auto 24px;
+}
+
+/* ── SONG PLAYER ──────────────────────────────── */
+.player {
+  display: flex; align-items: center; gap: 12px;
+  text-align: left;
+  background: color-mix(in srgb, var(--pink) 7%, var(--bg));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 13px 14px;
+  box-shadow: 0 6px 20px var(--shadow);
+}
+.player-icon { font-size: 26px; flex-shrink: 0 }
+.player-text { flex: 1; min-width: 0 }
+.player-text b { display: block; font-size: 12.5px; color: var(--ink); font-weight: 600 }
+.player-text small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted) }
+
+.play-btn {
+  border: 0; border-radius: 50%;
+  width: 40px; height: 40px; flex-shrink: 0;
+  background: linear-gradient(145deg, var(--pink), var(--rose));
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--rose) 40%, transparent);
+  transition: transform .15s, box-shadow .15s;
+}
+.play-btn:hover { transform: scale(1.08); box-shadow: 0 6px 18px color-mix(in srgb, var(--rose) 55%, transparent) }
+.play-btn:active { transform: scale(.96) }
+
+.hint {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--muted);
+  margin: 10px 0 24px;
+  opacity: .8;
+}
+
+/* ── CTA ──────────────────────────────────────── */
+.cta {
+  display: inline-block;
+  border: 0; border-radius: 32px;
+  padding: 13px 26px;
+  color: #fff;
+  background: linear-gradient(110deg, var(--pink), var(--rose));
+  font: 700 10px/1 var(--ff-body);
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--rose) 40%, transparent);
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s;
+}
+.cta:hover { transform: translateY(-2px); box-shadow: 0 10px 24px color-mix(in srgb, var(--rose) 50%, transparent) }
+.cta:active { transform: translateY(0) }
+
+/* ── SECRET ALBUM ─────────────────────────────── */
+.album {
+  display: none;
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  animation: arrive .55s ease both;
+}
+.album h2 {
+  font: 400 22px/1.2 var(--ff-display);
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+.album p {
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.memories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.memory {
+  min-height: 100px;
+  border: 1px dashed var(--border);
+  border-radius: 15px;
+  background: color-mix(in srgb, var(--pink) 5%, var(--bg));
+  display: grid; place-items: center;
+  padding: 14px 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.memory span { font-size: 26px; display: block; margin-bottom: 6px }
+
+/* ── FOOTER ───────────────────────────────────── */
+footer {
+  font: 500 10px/1 var(--ff-body);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: .7;
+  margin-top: 24px;
+}
+
+/* ── FLOATING PARTICLES ───────────────────────── */
+.float {
+  position: fixed;
+  bottom: -40px;
+  opacity: .65;
+  pointer-events: none;
+  animation: floatUp linear infinite;
+}
+@keyframes floatUp {
+  to { transform: translateY(-115vh) rotate(30deg); opacity: 0 }
+}
+
+@media (max-width: 400px) {
+  .card { padding: 28px 18px 24px }
+  .message { font-size: 13px }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .album, .float { animation: none }
+  .float { display: none }
+  .play-btn, .cta { transition: none }
+}
+</style>
+
+<main>
+  <section class="card" role="main">
+    <span class="corner l" aria-hidden="true">🌸</span>
+    <span class="corner r" aria-hidden="true">🦋</span>
+
+    <div class="avatar" aria-hidden="true">🐱</div>
+
+    <div class="eyebrow">♡ a little surprise for you ♡</div>
+
+    <h1>Happy Birthday<em>to you</em></h1>
+    <div class="name-line">Annu ♡</div>
+
+    <div class="divider" aria-hidden="true">✿ ✿ ✿</div>
+
+    <p class="message">
+      Today the whole world is a little brighter because it's your day.
+      May it be wrapped in warmth, filled with laughter,
+      sprinkled with sweet surprises, and everything you've ever wished for.
+      You deserve the absolute best — always. Happy Birthday! ♡
+    </p>
+
+    <div class="player" role="group" aria-label="Birthday melody player">
+      <div class="player-icon" aria-hidden="true">🕯️</div>
+      <div class="player-text">
+        <b>A little melody for your day</b>
+        <small>Made with love ♡</small>
+      </div>
+      <button class="play-btn" id="play" aria-label="Play birthday tune">▶</button>
+    </div>
+    <p class="hint">press play — a tiny birthday melody, just for you</p>
+
+    <button class="cta" id="albumBtn">See your little surprise →</button>
+
+    <div class="album" id="album" aria-live="polite">
+      <h2>A little more birthday magic ✨</h2>
+      <p>Some memories, some smiles, and a whole lot of good wishes — all just for you, Annu.</p>
+      <div class="memories">
+        <div class="memory"><div><span>📸</span>Your favourite photo</div></div>
+        <div class="memory"><div><span>🌼</span>A happy memory</div></div>
+        <div class="memory"><div><span>🎀</span>Keep being amazing</div></div>
+        <div class="memory"><div><span>💌</span>Best wishes, always</div></div>
+      </div>
+      <p>Wishing you the most beautiful year ahead. Happy Birthday once again, Annu! ♡</p>
+    </div>
+
+    <footer>Made with ♡ just for your special day</footer>
+  </section>
+</main>
+
+<script>
+// ── Album toggle ────────────────────────────────
+const album = document.getElementById('album');
+const btn   = document.getElementById('albumBtn');
+btn.addEventListener('click', () => {
+  const open = album.style.display === 'block';
+  album.style.display = open ? 'none' : 'block';
+  btn.textContent = open ? 'See your little surprise →' : 'Hide surprise ↑';
+});
+
+// ── Birthday melody (Web Audio) ─────────────────
+let playing = false, ctx, osc, gain;
+document.getElementById('play').addEventListener('click', () => {
+  const playBtn = document.getElementById('play');
+  if (!playing) {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) { playBtn.textContent = '♪'; return; }
+    ctx  = new AC();
+    osc  = ctx.createOscillator();
+    gain = ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = 523.25;
+    gain.gain.value = .042;
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start();
+    // Happy Birthday melody (C major)
+    const notes = [523.25, 523.25, 587.33, 523.25, 698.46, 659.25,
+                   523.25, 523.25, 587.33, 523.25, 783.99, 698.46];
+    let i = 0;
+    window._nt = setInterval(() => {
+      if (!playing) return;
+      osc.frequency.setTargetAtTime(notes[i++ % notes.length], ctx.currentTime, .04);
+    }, 420);
+    playing = true; playBtn.textContent = 'Ⅱ';
+  } else {
+    playing = false; clearInterval(window._nt);
+    osc.stop(); ctx.close();
+    document.getElementById('play').textContent = '▶';
+  }
+});
+
+// ── Floating particles ──────────────────────────
+const particles = ['♡', '✿', '🦋', '✨', '🌸', '⭐'];
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  setInterval(() => {
+    const el = document.createElement('div');
+    el.className = 'float';
+    el.setAttribute('aria-hidden', 'true');
+    el.textContent = particles[Math.floor(Math.random() * particles.length)];
+    el.style.left     = Math.random() * 100 + 'vw';
+    el.style.fontSize = (12 + Math.random() * 14) + 'px';
+    el.style.animationDuration = (8 + Math.random() * 6) + 's';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 15000);
+  }, 850);
+}
+</script>
+
+</body></html>
